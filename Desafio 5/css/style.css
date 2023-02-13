@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* HEADER */ 
+header{
+    background-color: #fbbc02;
+    height: 150px;
+    padding: 15px 15px 15px 40px;
+}
+.logo{
+    width: 300px;
+}
+nav{
+    margin-top: 25px;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link, nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+/* BANNER */ 
+.banner img{
+    width: 100%;
+}
+.login-register{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+/* MAIN */
+.flex-productos{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-productos article img{
+    width: 100%;
+}
+
+.flex-productos article{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    max-width: 450px;
+}
+main section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.flex-productos article div button , .footer_button{
+    background-color: #3583FA;
+    color: white;
+    border: 0;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+.productos-text-center .img-text-center{
+    width: 100%%;
+}
+.productos-text-center{
+    position: relative;
+}
+.productos-text-center span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main hr{
+    margin: 20px;
+}
+
+
+footer  div > ul{
+    list-style: none;
+}
+
+.footer{
+    padding: 50px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+    .footer-email{
+        text-align: center;
+    }
+
+}
+
+
+
+

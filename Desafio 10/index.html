@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi carrito de compras</title>
+  </head>
+  <body>
+    <h2>Producto</h2>
+    <div id="product"></div>
+
+    <h2>Carrito</h2>
+    <div id="cart"></div>
+
+    <button id="addToCart">Agregar al carrito</button>
+    <button id="increaseStock">+</button>
+    <button id="decreaseStock">-</button>
+    <button id="showCreators">Creadores</button>
+
+    <script>
+      const tv = {
+        brand: "Samsung",
+        model: "QN75Q900RBFXZA",
+        displaySize: 75,
+        price: 3500,
+        image: "https://imgur.com/oHD0Ssz",
+        stock: 10,
+      };
+
+      let cart = [];
+
+      const tvDetails = `
+        <h3>${tv.brand} ${tv.model}</h3>
+        <img src="${tv.image}" alt="${tv.brand} ${tv.model}">
+        <ul>
+          <li>Pulgadas: ${tv.displaySize}"</li>
+          <li>Precio: $${tv.price}</li>
+          <li>Stock: ${tv.stock}</li>
+        </ul>
+      `;
+
+      document.getElementById("product").innerHTML = tvDetails;
+
+      document.getElementById("addToCart").addEventListener("click", function () {
+        cart.push(tv);
+        updateCart();
+      });
+
+      document.getElementById("increaseStock").addEventListener("click", function () {
+        tv.stock++;
+        updateProduct();
+      });
+
+      document.getElementById("decreaseStock").addEventListener("click", function () {
+        tv.stock--;
+        updateProduct();
+      });
+
+      document.getElementById("showCreators").addEventListener("click", function () {
+        alert("Creado por OpenAI");
+      });
+
+      function updateProduct() {
+        document.getElementById("product").innerHTML = tvDetails;
+      }
+
+      function updateCart() {
+        let cartDetails = "<ul>";
+        for (let item of cart) {
+          cartDetails += `<li>${item.brand} ${item.model}</li>`;
+        }
+        cartDetails += "</ul>";
+        document.getElementById("cart").innerHTML = cartDetails;
+      }
+    </script>
+  </body>
+</html>

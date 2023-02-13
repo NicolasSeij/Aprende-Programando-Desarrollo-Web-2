@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+	<script src="./js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <header>
+        <div>
+            <img class="logo" src="img/mercado-liebre.png" alt="logo">
+            <span><i class='bx bxs-hand-right' ></i>Todas las opiniones en un solo lugar</span>
+        </div>
+        <nav>
+            <a href="">Todos los productos</a>
+            <a href="registro.html" class="login-register"><i class='bx bx-id-card'></i>Crea tu cuenta</a>
+            <a href="ingreso.html"><i class='bx bx-arrow-to-right'></i>Ingresa</a>
+        </nav>
+    </header>
+    <section class="banner"> 
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">   
+                     <img src="img/banner1.jpg" class="d-block w-100" alt="banner">
+                </div>
+                <div>  
+                <img class="carousel-item" src="img/banner2.jpg" class="d-block w-100" alt="banner"> 
+                </div>
+            </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+        </div>
+    </section>
+    <main class="container-fluid">
+        <section>
+            <h2>Disfruta nuestras ofertas</h2>
+            <div class="flex-productos" class="row">
+
+                <article class="col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/productos/img-cafetera-moulinex.jpg" alt="cafetera">
+                    <div>
+                        <span>Cafetera Moulinex</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="col-xl-3 col-md-6 col-sm-12">>
+                    <img src="img/productos/img-macbook-pro-2019.jpg" alt="macbook">
+                    <div>
+                        <span>Macbook Pro 2019</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="col-xl-3 col-md-6 col-sm-12">>
+                    <img src="img/productos/img-samsung-galaxy-s10.jpg" alt="celular">
+                    <div>
+                        <span>Samsung galaxy S10</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+                <article class="col-xl-3 col-md-6 col-sm-12">>
+                    <img src="img/productos/img-tv-samsung-smart.jpg" alt="tv">
+                    <div>
+                        <span>TV Samsung Smart</span>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Productos destacados</h2>
+            <div class="flex-productos" class="row">
+
+                <article class="productos-text-center" class="col-md-6 col-sm-12">
+                    <img class="img-text-center" src="img/productos/img-samsung-galaxy-s10.jpg" alt="celular">
+                    <span>Samsung Galaxy S10</span>
+                </article>
+
+                <article class="productos-text-center" class="col-md-6 col-sm-12">
+                    <img class="img-text-center" src="img/productos/img-tv-samsung-smart.jpg" alt="televisor">
+                    <span>TV Samsung Smart</span>
+                </article>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="row">
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <h3>Seguinos</h3>
+                <ul>
+                     <li> <i class='bx bxl-facebook'></i>Facebook</li>
+                     <li> <i class='bx bxl-instagram'></i>Instagram</li>
+                     <li> <i class='bx bxl-linkedin-square'></i>Linkedin</li>
+                     <li> <i class='bx bxl-youtube'></i>Youtube</li>
+                </ul>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+            <h3>Otros Servicios</h3>
+                <ul>
+                    <li>MercadoLiebre Pagos</li>
+                    <li>MercadoLiebre Shops</li>
+                    <li>MercadoLiebre Evios</li>
+                </ul>
+            </div>
+
+            <div class="col-xl-4 col-sm-12 footer-email">
+                <h3>Trabaja Para nosotros</h3>
+                <form>
+                    <input type="email" placeholder="ingresa tu email">
+                    <input type="submit" name="enviar" class="footer_button">
+                </form>  
+        </div>
+    </footer>
+</body>
+</html>
